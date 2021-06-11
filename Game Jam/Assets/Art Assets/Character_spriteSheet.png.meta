@@ -1,10 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: d202f810a7c54bd4a951963ab03596f0
-TextureImporter:
-  internalIDToNameTable: []
-=======
-guid: 52c25ef64144b814d93502ef81fae0b8
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -148,7 +143,6 @@ TextureImporter:
   - first:
       213: -3383151740164833236
     second: Character_spriteSheet_46
->>>>>>> Stashed changes
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -188,11 +182,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< Updated upstream
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -226,11 +216,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
-=======
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -1233,7 +1218,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
->>>>>>> Stashed changes
     outline: []
     physicsShape: []
     bones: []
