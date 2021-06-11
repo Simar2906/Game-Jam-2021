@@ -9,11 +9,6 @@ public class Player_Movement : MonoBehaviour
     private bool facingRight = true;
     private float moveDirection;
     public float moveSpeed;
-    
-    public KeyCode leftKey;
-    public KeyCode rightKey;
-    public KeyCode upKey;
-    public KeyCode downKey;
 
     private void Awake() 
     {
@@ -27,5 +22,19 @@ public class Player_Movement : MonoBehaviour
 
         rigidBody.velocity = new Vector2(moveDirection * moveSpeed, rigidBody.velocity.y);
 
+        if(moveDirection > 0 && !facingRight)
+        {
+            FlipCharacter();
+        }
+        else if(moveDirection < 0 && facingRight)
+        {
+            FlipCharacter();
+        }
+    }
+
+    private void FlipCharacter()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 }
