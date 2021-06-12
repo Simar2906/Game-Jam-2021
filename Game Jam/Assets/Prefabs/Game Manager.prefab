@@ -43,4 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2db708ce818b642afce07394ea79ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  lives: 3
   restartDelay: 1
+  darkArray: []
+  lightArray: []
+  dark: 1
+  spriteRenderer: {fileID: 0}

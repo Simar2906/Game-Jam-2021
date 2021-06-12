@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dark Platform
   - Light Platform
+  - Grey Platform
   layers:
   - Default
   - TransparentFX
