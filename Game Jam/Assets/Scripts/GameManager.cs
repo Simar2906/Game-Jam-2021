@@ -1,40 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
-{
-    public static GameManager Instance;
+public class GameManager : MonoBehaviour{
 
-    public GameState State;
+    bool gameHasEnded = false;
 
-    //public static event Action<GameState> OnGameStateChanged;
-
-    void Awake() {
-        Instance = this;
-    }
-
-    void Start(){
-        //UpdateGameState(GameState)
-    }
-
-    public void UpdateGameState(GameState newState){
-        State = newState;
-
-        switch (newState){
-            case GameState.Victory:
-                break;
-            case GameState.Lose:
-                break;
-            //default:
-                //throw new ArgumentOutOfRangeException(nameof(newState), newState, null)
+    public float restartDelay = 1f;
+    public void EndGame ()
+    {
+        if (gameHasEnded == false)
+        {
+            gameHasEnded = true;
+            Debug.Log("GAME OVER");
+            Invoke("Restart", restartDelay);
+            /*Need to add a new if condition on player_movement script to see if the object is falling or colliding with enemy 
+            obejct*/
         }
-
-        //OnGameStateChanged?.Invoke(newState)
     }
-}
 
-public enum GameState{
-    Victory,
-    Lose
+    void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
