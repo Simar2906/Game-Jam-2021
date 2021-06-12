@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] lightArray;
     public bool dark = true;
     public SpriteRenderer spriteRenderer;
-
+    public TimeManager timeManager;
     public void EndGame()
     {
         if (gameHasEnded == false)
@@ -20,8 +20,6 @@ public class GameManager : MonoBehaviour
             gameHasEnded = true;
             Debug.Log("GAME OVER");
             Invoke("Restart", restartDelay);
-            /*Need to add a new if condition on player_movement script to see if the object is falling or colliding with enemy 
-            obejct*/
         }
     }
     private void Awake()
@@ -41,8 +39,8 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J)) //left key: 0
         {
-            dark = !dark;
-            
+            timeManager.DoSlowmotion();
+            dark = !dark;  
         }
     }
 
@@ -79,5 +77,4 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
 }

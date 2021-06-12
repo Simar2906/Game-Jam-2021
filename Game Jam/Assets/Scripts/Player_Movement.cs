@@ -50,7 +50,7 @@ public class Player_Movement : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObjects);
-        //Debug.Log(isGrounded);
+        Debug.Log(isGrounded);
     }
     private void Move()
     {
