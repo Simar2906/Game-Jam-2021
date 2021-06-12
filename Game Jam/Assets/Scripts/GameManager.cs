@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J)) //left key: 0
         {
-            StartCoroutine(WaitForSeconds());
             dark = !dark;
             
         }
@@ -79,15 +78,6 @@ public class GameManager : MonoBehaviour
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public IEnumerator WaitForSeconds()
-    {
-        Debug.Log("Pausing");
-        Time.timeScale = 0f;
-        yield return new WaitForSeconds(1f);
-        Time.timeScale = 1f;
-        Debug.Log("Resuming");
     }
 
 }

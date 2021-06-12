@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &600710232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527191763700088018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50d630551b6ef74d9b7b93c922b6371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  verticalDistance: 5
+--- !u!1001 &5964737425332388812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 657271557435593115, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d3cee398ca1620e4eaec2b9537a1d2a1, type: 3}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148318, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Name
+      value: Grey Movable Vertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635074925879148319, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d3cee398ca1620e4eaec2b9537a1d2a1, type: 3}
+    - target: {fileID: 2731402682964017271, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Name
+      value: Grey Movable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162218212912047418, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Name
+      value: Grey Movable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354951420678768318, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Name
+      value: Grey Movable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491286916800326069, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d3cee398ca1620e4eaec2b9537a1d2a1, type: 3}
+    - target: {fileID: 7073925651013960182, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Name
+      value: Grey Movable
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077022844830536753, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d3cee398ca1620e4eaec2b9537a1d2a1, type: 3}
+    - target: {fileID: 9150555119341267702, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d3cee398ca1620e4eaec2b9537a1d2a1, type: 3}
+    m_RemovedComponents:
+    - {fileID: 6442199915641424537, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+--- !u!1 &8527191763700088018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2635074925879148318, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
+  m_PrefabInstance: {fileID: 5964737425332388812}
+  m_PrefabAsset: {fileID: 0}
