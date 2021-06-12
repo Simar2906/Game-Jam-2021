@@ -11,8 +11,10 @@ public class GameManager : MonoBehaviour
     public GameObject[] darkArray;
     public GameObject[] lightArray;
     public bool dark = true;
+
+    public bool keyAcquired = false;
     public SpriteRenderer spriteRenderer;
-    public TimeManager timeManager;
+    //public TimeManager timeManager;
     public void EndGame()
     {
         if (gameHasEnded == false)
@@ -39,7 +41,7 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J)) //left key: 0
         {
-            timeManager.DoSlowmotion();
+            //timeManager.DoSlowmotion();
             dark = !dark;  
         }
     }
@@ -77,4 +79,5 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
 }

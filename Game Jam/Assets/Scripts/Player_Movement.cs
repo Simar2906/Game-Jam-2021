@@ -50,7 +50,7 @@ public class Player_Movement : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObjects);
-        Debug.Log(isGrounded);
+        //Debug.Log(isGrounded);
     }
     private void Move()
     {
@@ -85,7 +85,7 @@ public class Player_Movement : MonoBehaviour
         moveDirection = Input.GetAxis("Horizontal"); //(-1 to +1)
         if((Input.GetKeyDown(jumpKey) || Input.GetButtonDown("Jump")) && isGrounded)
         {
-            //Debug.Log("Jumping");
+            Debug.Log("Jumping");
             isJumping = true;
         }
     }
