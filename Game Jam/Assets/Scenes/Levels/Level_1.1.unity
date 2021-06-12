@@ -239,14 +239,6 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1158451736}
-    - target: {fileID: 818579474105671065, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
-      propertyPath: m_Lens.m_SensorSize.x
-      value: 2.1213872
-      objectReference: {fileID: 0}
-    - target: {fileID: 818579474105671065, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
 --- !u!4 &1158451736 stripped
@@ -365,10 +357,6 @@ PrefabInstance:
     - target: {fileID: 8595390524865964376, guid: 62ff654d7da60674d9686021f6be2dbe, type: 3}
       propertyPath: m_Name
       value: Main Camera (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8595390524865964378, guid: 62ff654d7da60674d9686021f6be2dbe, type: 3}
-      propertyPath: orthographic size
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8595390524865964381, guid: 62ff654d7da60674d9686021f6be2dbe, type: 3}
       propertyPath: m_RootOrder
