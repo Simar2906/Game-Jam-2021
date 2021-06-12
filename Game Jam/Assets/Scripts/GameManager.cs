@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public bool keyAcquired = false;
     public SpriteRenderer spriteRenderer;
+    public Animator player_Animator;
+
     //public TimeManager timeManager;
     public void EndGame()
     {
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
         darkArray = GameObject.FindGameObjectsWithTag("Dark Platform");
         lightArray = GameObject.FindGameObjectsWithTag("Light Platform");
         player = GameObject.FindGameObjectWithTag("Player");
+        player_Animator = player.GetComponent<Animator>();
         spriteRenderer = player.GetComponent<SpriteRenderer> ();
     }
     private void Update()
@@ -50,7 +53,7 @@ public class GameManager : MonoBehaviour
     {
         if (dark)
         {
-
+            player_Animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/controller_light");
             foreach (GameObject light in lightArray)
             {
                 light.SetActive(false);
@@ -64,6 +67,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            player_Animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/controller_dark");
             foreach (GameObject light in lightArray)
             {
                 light.SetActive(true);

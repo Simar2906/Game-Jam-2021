@@ -22,7 +22,7 @@ public class Player_Movement : MonoBehaviour
     private bool isGrounded;
     public float checkRadius;
 
-    public float levelBottom = -4f;
+    public float levelBottom = -50f;
     private void Awake() 
     {
         rigidBody = GetComponent<Rigidbody2D>();

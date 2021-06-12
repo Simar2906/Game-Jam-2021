@@ -159,7 +159,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   checkRadius: 0.2
-  levelBottom: -4
+  levelBottom: -100
 --- !u!95 &2870996918910869527
 Animator:
   serializedVersion: 3

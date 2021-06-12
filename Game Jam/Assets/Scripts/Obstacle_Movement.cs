@@ -11,6 +11,7 @@ public class Obstacle_Movement : MonoBehaviour
     private Vector2 pos2;
     private Rigidbody2D objectRigidBody;
     private bool dirRight = true;
+    public float rotationSpeed = 1f;
 
     private bool turnback;
     private void Awake()
@@ -28,6 +29,7 @@ public class Obstacle_Movement : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.Lerp (pos1, pos2, (Mathf.Sin(speed * Time.time) + 1.0f) / 2.0f);   
+        transform.Rotate(0, 0, rotationSpeed);
     }
 
 
