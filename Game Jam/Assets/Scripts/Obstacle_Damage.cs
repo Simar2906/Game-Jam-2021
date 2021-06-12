@@ -21,7 +21,7 @@ public class Obstacle_Damage : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            player.Damage(1);
+            Damage();
 
         }
     }
