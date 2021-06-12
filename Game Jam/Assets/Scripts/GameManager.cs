@@ -8,14 +8,14 @@ public class GameManager : MonoBehaviour
 
     public GameState State;
 
-    public static event Action<GameState> OnGameStateChanged;
+    //public static event Action<GameState> OnGameStateChanged;
 
     void Awake() {
         Instance = this;
     }
 
     void Start(){
-        UpdateGameState(GameState)
+        //UpdateGameState(GameState)
     }
 
     public void UpdateGameState(GameState newState){
@@ -26,11 +26,11 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Lose:
                 break;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(newState), newState, null)
+            //default:
+                //throw new ArgumentOutOfRangeException(nameof(newState), newState, null)
         }
 
-        OnGameStateChanged?.Invoke(newState)
+        //OnGameStateChanged?.Invoke(newState)
     }
 }
 
