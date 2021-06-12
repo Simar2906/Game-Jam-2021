@@ -5,12 +5,13 @@ public class GameManager : MonoBehaviour
 {
 
     bool gameHasEnded = false;
-
+    public GameObject player = null;
     public int lives = 3;
     public float restartDelay = 1f;
     public GameObject[] darkArray;
     public GameObject[] lightArray;
     public bool dark = true;
+    public SpriteRenderer spriteRenderer;
 
     public void EndGame()
     {
@@ -27,7 +28,8 @@ public class GameManager : MonoBehaviour
     {
         darkArray = GameObject.FindGameObjectsWithTag("Dark Platform");
         lightArray = GameObject.FindGameObjectsWithTag("Light Platform");
-
+        player = GameObject.FindGameObjectWithTag("Player");
+        spriteRenderer = player.GetComponent<SpriteRenderer> ();
     }
     private void Update()
     {
@@ -37,7 +39,7 @@ public class GameManager : MonoBehaviour
     void Switching()
     {
 
-        if (Input.GetMouseButtonDown(0)) //left key: 0
+        if (Input.GetKeyDown(KeyCode.J)) //left key: 0
         {
             dark = !dark;
         }
@@ -57,7 +59,7 @@ public class GameManager : MonoBehaviour
             {
                 dark.SetActive(true);
             }
-            
+            //spriteRenderer.sprite = differentSprite;
 
         }
         else
