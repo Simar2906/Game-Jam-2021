@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour{
 
     bool gameHasEnded = false;
 
+    public int lives = 3;
     public float restartDelay = 1f;
     public void EndGame ()
     {
