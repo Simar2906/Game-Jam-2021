@@ -6,21 +6,29 @@ public class Obstacle_Movement : MonoBehaviour
 {
     // Start is called before the first frame update
     public float speed = 5f;
-    public float lateralDistance = 1f;
-    private Transform pos1;
-    private Transform pos2;
+    public float lateralDistance = 100f;
+    private Vector2 pos1;
+    private Vector2 pos2;
+    private Rigidbody2D objectRigidBody;
+    private bool dirRight = true;
 
     private bool turnback;
-    void Awake()
+    private void Awake()
     {
-        pos1.position = new Vector2(transform.position.x - lateralDistance, transform.position.y);
-        pos2.position = new Vector2(transform.position.x + lateralDistance, transform.position.y);
-        
+        pos1 = new Vector2(transform.position.x - lateralDistance, transform.position.y);
+        pos2 = new Vector2(transform.position.x + lateralDistance, transform.position.y);
+        objectRigidBody = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = Vector3.Lerp (pos1, pos2, (Mathf.Sin(speed * Time.time) + 1.0f) / 2.0f);   
     }
+
+
 }
