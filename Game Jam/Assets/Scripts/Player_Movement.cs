@@ -9,12 +9,20 @@ public class Player_Movement : MonoBehaviour
     private bool facingRight = true;
     private float moveDirection;
     public float moveSpeed;
-    public Animator animator;
+    private Animator animator;
 
     public KeyCode jumpKey = KeyCode.W;
 
     public float jumpForce;
     private bool isJumping = false;
+
+    public Transform groundCheck = null;
+    public LayerMask groundObjects;
+
+    private bool isGrounded;
+    public float checkRadius;
+
+    public float levelBottom = -4f;
     private void Awake() 
     {
         rigidBody = GetComponent<Rigidbody2D>();
@@ -37,6 +45,12 @@ public class Player_Movement : MonoBehaviour
     {
         //move
         Move();
+        if(rigidBody.position.y < levelBottom)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObjects);
+        Debug.Log(isGrounded);
     }
     private void Move()
     {
@@ -45,6 +59,8 @@ public class Player_Movement : MonoBehaviour
         {
             rigidBody.AddForce(new Vector2(0f, jumpForce));
         }
+        isJumping = false;
+
     }
 
     private void Animate()
@@ -67,12 +83,11 @@ public class Player_Movement : MonoBehaviour
     private void ProcessMethod()
     {
         moveDirection = Input.GetAxis("Horizontal"); //(-1 to +1)
-        if(Input.GetKeyDown(jumpKey))
+        if((Input.GetKeyDown(jumpKey) || Input.GetButtonDown("Jump")) && isGrounded)
         {
             Debug.Log("Jumping");
             isJumping = true;
         }
-        isJumping = false;
     }
 
     private void FlipCharacter()
