@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1181906070}
   - component: {fileID: 1181906069}
   m_Layer: 0
-  m_Name: Obstacle
+  m_Name: Obstacle_Sin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,4 +164,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  lateralDistance: 10
+  lateralDistance: 5
