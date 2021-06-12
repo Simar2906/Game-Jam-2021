@@ -197,11 +197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 818579474105671064, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6430001
+      value: -6.4700003
       objectReference: {fileID: 0}
     - target: {fileID: 818579474105671064, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.76183385
+      value: -0.53599995
       objectReference: {fileID: 0}
     - target: {fileID: 818579474105671064, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -235,8 +235,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 818579474105671065, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1158451736}
+    - target: {fileID: 818579474105671065, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 2.1213872
+      objectReference: {fileID: 0}
+    - target: {fileID: 818579474105671065, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfbf39952b3d08b47a1ec9ace48611a3, type: 3}
+--- !u!4 &1158451736 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5633321573172104901, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
+  m_PrefabInstance: {fileID: 1290830517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1266159110
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,15 +315,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633321573172104901, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5633321573172104901, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5633321573172104901, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5633321573172104901, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -361,17 +378,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8595390524865964378, guid: 62ff654d7da60674d9686021f6be2dbe, type: 3}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8595390524865964381, guid: 62ff654d7da60674d9686021f6be2dbe, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8595390524865964381, guid: 62ff654d7da60674d9686021f6be2dbe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6430001
+      value: -6.4700003
       objectReference: {fileID: 0}
     - target: {fileID: 8595390524865964381, guid: 62ff654d7da60674d9686021f6be2dbe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.76183385
+      value: -0.53599995
       objectReference: {fileID: 0}
     - target: {fileID: 8595390524865964381, guid: 62ff654d7da60674d9686021f6be2dbe, type: 3}
       propertyPath: m_LocalPosition.z
