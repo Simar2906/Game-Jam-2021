@@ -45,6 +45,8 @@ public class Player_Movement : MonoBehaviour
         {
             rigidBody.AddForce(new Vector2(0f, jumpForce));
         }
+        isJumping = false;
+
     }
 
     private void Animate()
@@ -72,7 +74,6 @@ public class Player_Movement : MonoBehaviour
             Debug.Log("Jumping");
             isJumping = true;
         }
-        isJumping = false;
     }
 
     private void FlipCharacter()

@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2db708ce818b642afce07394ea79ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  restartDelay: 1
 --- !u!1001 &152362600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,7 +176,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 258332735, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
       propertyPath: jumpForce
-      value: 12
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 258332737, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
       propertyPath: m_Constraints
@@ -351,11 +352,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8179703779864876625, guid: 0f17746b9c64b474abfc5033f901d6c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.04
+      value: 2.27
       objectReference: {fileID: 0}
     - target: {fileID: 8179703779864876625, guid: 0f17746b9c64b474abfc5033f901d6c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25287712
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 8179703779864876625, guid: 0f17746b9c64b474abfc5033f901d6c2, type: 3}
       propertyPath: m_LocalPosition.z
