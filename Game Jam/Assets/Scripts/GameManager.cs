@@ -56,7 +56,6 @@ public class GameManager : MonoBehaviour
         if (Input.GetKey(KeyCode.J))
         {
             Time.timeScale = timeswitching;
-            Time.fixedDeltaTime = Time.timeScale * .02f;
         }
         else{
             Time.timeScale = 1;
