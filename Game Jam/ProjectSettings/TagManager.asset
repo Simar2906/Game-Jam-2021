@@ -10,6 +10,7 @@ TagManager:
   - Dark Moving Platform
   - Light Moving Platform
   - Platform Center
+  - Game Manager
   layers:
   - Default
   - TransparentFX

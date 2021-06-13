@@ -8,7 +8,7 @@ public class Coin : MonoBehaviour
     public float rotateSpeed = 1f;
     private void Awake()
     {
-        //gameManager = GetComponent<GameManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
