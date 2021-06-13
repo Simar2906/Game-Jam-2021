@@ -31,6 +31,7 @@ public class Obstacle_Damage : MonoBehaviour
         Debug.Log("Damaged");
         FindObjectOfType<AudioManager>().Play("damaged");
         FindObjectOfType<GameManager>().lives -= 1;
+        Destroy(gameObject);
     }
 
     

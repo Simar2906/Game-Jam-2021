@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   lives: 3
-  numOfHearts: 5
+  numOfHearts: 3
   restartDelay: 0.1
   darkArray: []
   lightArray: []
@@ -57,5 +57,5 @@ MonoBehaviour:
   player_Animator: {fileID: 0}
   timeswitching: 0.4
   coinAmount: 0
-  coinCost: 15
+  coinCost: 20
   pauseMenu: {fileID: 0}
