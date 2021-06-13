@@ -17,8 +17,6 @@ public class GameManager : MonoBehaviour
     public Animator player_Animator;
 
     public float timeswitching =0.4f;
-
-    //public TimeManager timeManager;
     public void EndGame()
     {
         if (gameHasEnded == false)
@@ -46,7 +44,6 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J)) //left key: 0
         {
-            //timeManager.DoSlowmotion();
             dark = !dark;  
         }
 
