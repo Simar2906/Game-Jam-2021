@@ -17,6 +17,7 @@ public class Key_Collision : MonoBehaviour
         {
             Debug.Log("Touched Key");
             gameManager.keyAcquired = true;
+            FindObjectOfType<AudioManager>().Play("key");
             Destroy(gameObject);
         }
     }
