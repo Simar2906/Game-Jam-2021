@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Animator player_Animator;
 
+    public float timeswitching =0.4f;
+
     //public TimeManager timeManager;
     public void EndGame()
     {
@@ -47,6 +49,15 @@ public class GameManager : MonoBehaviour
             //timeManager.DoSlowmotion();
             dark = !dark;  
         }
+
+        if (Input.GetKey(KeyCode.J))
+        {
+            Time.timeScale = timeswitching;
+        }
+        else{
+            Time.timeScale = 1;
+        }
+            
     }
 
     private void ThemeChange()
