@@ -1510,9 +1510,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437328239190987602, guid: 5093b1615f2f830459ad41818ac329ac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1437328240045939258, guid: 5093b1615f2f830459ad41818ac329ac, type: 3}
       propertyPath: m_Name
       value: Pause Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437328240045939258, guid: 5093b1615f2f830459ad41818ac329ac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1437328240045939262, guid: 5093b1615f2f830459ad41818ac329ac, type: 3}
       propertyPath: m_Pivot.x
