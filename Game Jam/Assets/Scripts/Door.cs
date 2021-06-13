@@ -14,12 +14,11 @@ public class Door : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("Touched Door");
             if(gameManager.keyAcquired)
             {
-                Debug.Log("Level has ended");
+                Debug.Log("Level has Completed");
                 FindObjectOfType<AudioManager>().Play("complete");
-                gameManager.EndGame();
+                gameManager.CompleteLevel();
             }
         }
     }

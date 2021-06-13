@@ -24,6 +24,12 @@ public class GameManager : MonoBehaviour
     public int coinAmount = 0;
     public int coinCost = 3;
     public PauseMenu pauseMenu;
+    public GameObject completeLevelUI;
+
+    public void CompleteLevel ()
+    {
+        completeLevelUI.SetActive(true);
+    }
     public void EndGame()
     {
         if (gameHasEnded == false)
