@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     public float timeswitching =0.4f;
     public int coinAmount = 0;
+
+    public PauseMenu pauseMenu;
     public void EndGame()
     {
         if (gameHasEnded == false)
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         player_Animator = player.GetComponent<Animator>();
         spriteRenderer = player.GetComponent<SpriteRenderer> ();
+        pauseMenu = FindObjectOfType<PauseMenu>();
     }
     private void Update()
     {
@@ -55,7 +58,7 @@ public class GameManager : MonoBehaviour
         {
             dark = !dark;  
         }
-
+        if(!pauseMenu.GameIsPaused){
         if (Input.GetKey(KeyCode.J))
         {
             Time.timeScale = timeswitching;
@@ -64,6 +67,7 @@ public class GameManager : MonoBehaviour
         else{
             Time.timeScale = 1;
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
+        }
         }
             
     }
