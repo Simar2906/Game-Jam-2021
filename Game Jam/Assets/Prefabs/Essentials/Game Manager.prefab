@@ -57,3 +57,5 @@ MonoBehaviour:
   player_Animator: {fileID: 0}
   timeswitching: 0.4
   coinAmount: 0
+  coinCost: 15
+  pauseMenu: {fileID: 0}
