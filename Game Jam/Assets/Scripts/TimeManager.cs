@@ -7,8 +7,10 @@ public class TimeManager : MonoBehaviour
         {
             Time.timeScale = 0.65f;
         }
-        else
+        else{
             Time.timeScale = 1;
+        }
+            
     }
     /*public float slowdownFactor = 0.05f;
     public float slowdownLength = 2f;
