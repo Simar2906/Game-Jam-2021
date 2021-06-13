@@ -16,7 +16,7 @@ public class Obstacle_Damage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FindObjectOfType<GameManager>().lives = health;
+        //FindObjectOfType<GameManager>().lives = health;
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
@@ -25,15 +25,11 @@ public class Obstacle_Damage : MonoBehaviour
         {
             Damage();
         }
-        if(health <= 0)
-        {
-            FindObjectOfType<GameManager>().EndGame();
-        }
     }
     private void Damage()
     {
         Debug.Log("Damaged");
-        health -= 1;
+        FindObjectOfType<GameManager>().lives -= 1;
     }
 
     
