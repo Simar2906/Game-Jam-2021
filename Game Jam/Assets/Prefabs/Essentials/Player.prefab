@@ -134,7 +134,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d55c7634e7e3e7542901aa2c677f3fc2, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -152,10 +152,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  fallMultiplier: 4.5
+  fallMultiplier: 2.5
   jumpKey: 119
   jumpForce: 400
-  jumpVelocity: 8
+  jumpVelocity: 12
   groundCheck: {fileID: 8772231663058421335}
   groundObjects:
     serializedVersion: 2
