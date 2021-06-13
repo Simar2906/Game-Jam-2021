@@ -97,6 +97,7 @@ public class Player_Movement : MonoBehaviour
         if((Input.GetKeyDown(jumpKey) || Input.GetButtonDown("Jump")) && isGrounded)
         {
             Debug.Log("Jumping");
+            FindObjectOfType<AudioManager>().Play("jump");
             isJumping = true;
         }
     }

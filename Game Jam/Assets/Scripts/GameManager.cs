@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
         }
         if(lives <= 0)
         {
+            FindObjectOfType<AudioManager>().Play("death");
             EndGame();
         }
     }

@@ -18,6 +18,7 @@ public class Coin : MonoBehaviour
         {
             Debug.Log("Touched Coin");
             gameManager.coinAmount += 1;
+            FindObjectOfType<AudioManager>().Play("coin");
             Destroy(gameObject);
         }
     }

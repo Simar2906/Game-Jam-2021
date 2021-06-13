@@ -15,7 +15,6 @@ public class Spike_Kill : MonoBehaviour
         {
             Debug.Log("You have died");
             FindObjectOfType<GameManager>().lives = 0;
-            gameManager.EndGame();
         }
     }
 }
