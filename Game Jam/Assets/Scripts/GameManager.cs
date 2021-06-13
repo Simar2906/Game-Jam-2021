@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public Animator player_Animator;
 
     public float timeswitching =0.4f;
+    public int coinAmount = 0;
     public void EndGame()
     {
         if (gameHasEnded == false)

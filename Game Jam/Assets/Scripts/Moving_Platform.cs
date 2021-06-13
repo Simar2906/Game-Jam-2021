@@ -10,13 +10,18 @@ public class Moving_Platform : MonoBehaviour
     private Vector2 pos1;
     private Vector2 pos2;
     private Rigidbody2D objectRigidBody;
-    private bool dirRight = true;
+    public bool dirRight = true;
 
     private bool turnback;
     private void Awake()
     {
-        pos1 = new Vector2(transform.position.x - lateralDistance, transform.position.y);
-        pos2 = new Vector2(transform.position.x + lateralDistance, transform.position.y);
+        int right = 1;
+        if (!dirRight){
+        right = -1;
+        }
+
+        pos1 = new Vector2(transform.position.x - (lateralDistance * right), transform.position.y);
+        pos2 = new Vector2(transform.position.x + (lateralDistance * right), transform.position.y);
         objectRigidBody = GetComponent<Rigidbody2D>();
     }
 
