@@ -71,7 +71,25 @@ MonoBehaviour:
     loop: 0
   - name: death
     clip: {fileID: 8300000, guid: 943801321bd36b943b31498b75b77e49, type: 3}
-    volume: 0.579
+    volume: 0.339
+    pitch: 0.75
+    source: {fileID: 0}
+    loop: 0
+  - name: switch
+    clip: {fileID: 8300000, guid: e7d004ad9b76c0244823c9ef37e45b3e, type: 3}
+    volume: 0.109
+    pitch: 0.44
+    source: {fileID: 0}
+    loop: 0
+  - name: complete
+    clip: {fileID: 8300000, guid: 2bfc8094c2a562e41bc66a6adf51d56f, type: 3}
+    volume: 0.214
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: key
+    clip: {fileID: 8300000, guid: 09f61be7e01db014a93d0f46a078d0c4, type: 3}
+    volume: 0.195
     pitch: 1
     source: {fileID: 0}
     loop: 0
