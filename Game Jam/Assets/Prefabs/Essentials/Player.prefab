@@ -152,8 +152,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  fallMultiplier: 4.5
   jumpKey: 119
   jumpForce: 400
+  jumpVelocity: 8
   groundCheck: {fileID: 8772231663058421335}
   groundObjects:
     serializedVersion: 2

@@ -269,6 +269,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 258332735, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
+      propertyPath: jumpVelocity
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 258332735, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
+      propertyPath: fallMultiplier
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 258332737, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: d55c7634e7e3e7542901aa2c677f3fc2, type: 2}
     - target: {fileID: 5633321573172104896, guid: d2a0bc79ef4bfb6459de838676ba06f8, type: 3}
       propertyPath: m_Name
       value: Player
