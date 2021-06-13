@@ -6,9 +6,9 @@ public class Key_Collision : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameManager gameManager;
-    private void Awake() 
+    private void Awake()
     {
-        //gameManager = GetComponent<GameManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D other) 
