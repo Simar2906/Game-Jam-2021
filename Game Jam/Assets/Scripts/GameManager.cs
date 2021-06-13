@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded = false;
     public GameObject player = null;
     public int lives = 3;
-    public int numOfHearts = 5;
+    public int numOfHearts = 3;
     public float restartDelay = 1f;
     public GameObject[] darkArray;
     public GameObject[] lightArray;
