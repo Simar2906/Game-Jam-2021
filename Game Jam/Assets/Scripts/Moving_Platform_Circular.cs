@@ -9,7 +9,20 @@ public class Moving_Platform_Circular : MonoBehaviour
      
      private Vector3 zAxis = new Vector3(0, 0, 1);
  
-     void FixedUpdate () {
-         transform.RotateAround(target.position, zAxis, speed); 
-     }
+     void FixedUpdate () 
+     {
+        transform.RotateAround(target.position, zAxis, speed); 
+        transform.rotation = new Quaternion(0, 0, 0, 0);
+    }
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
+        if(other.collider.CompareTag("Player"))
+        {
+            other.collider.transform.SetParent(transform);
+        }
+    }
+    private void OnCollisionExit2D(Collision2D other) 
+    {
+        other.collider.transform.SetParent(null);
+    }
 }

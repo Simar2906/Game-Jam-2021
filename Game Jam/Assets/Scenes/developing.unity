@@ -842,57 +842,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7152805115851420415, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152805115851420415, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152805115851420415, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152805115851420415, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152805115851420415, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7152805115851420415, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8094530142472433654, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
       propertyPath: m_Name
       value: 'Platform_Center '
       objectReference: {fileID: 0}
-    - target: {fileID: 8094530142472433654, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
-      propertyPath: m_TagString
-      value: Dark Moving Platform
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
---- !u!1 &3456661907089743001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8094530142472433654, guid: 38ac923a2fe01d641b3639fa8d8f09f9, type: 3}
-  m_PrefabInstance: {fileID: 3456661907089743000}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3456661907089743002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3456661907089743001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16d24d673c284ae48adace4c1bc2b9db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4349550496756312143
 PrefabInstance:
   m_ObjectHideFlags: 0
