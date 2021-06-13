@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public float restartDelay = 1f;
     public GameObject[] darkArray;
     public GameObject[] lightArray;
+    public GameObject[] darkMovingArray;
+    public GameObject[] lightMovingArray;
     public bool dark = true;
 
     public bool keyAcquired = false;
@@ -30,6 +32,10 @@ public class GameManager : MonoBehaviour
     {
         darkArray = GameObject.FindGameObjectsWithTag("Dark Platform");
         lightArray = GameObject.FindGameObjectsWithTag("Light Platform");
+        
+        darkMovingArray = GameObject.FindGameObjectsWithTag("Dark Moving Platform");
+        lightMovingArray = GameObject.FindGameObjectsWithTag("Light Moving Platform");
+
         player = GameObject.FindGameObjectWithTag("Player");
         player_Animator = player.GetComponent<Animator>();
         spriteRenderer = player.GetComponent<SpriteRenderer> ();
@@ -72,6 +78,16 @@ public class GameManager : MonoBehaviour
                 dark.SetActive(true);
             }
             //spriteRenderer.sprite = differentSprite;
+            foreach (GameObject lightPlat in lightMovingArray)
+            {
+                lightPlat.GetComponent<SpriteRenderer>().enabled = false;
+                lightPlat.GetComponent<BoxCollider2D>().enabled = false;
+            }
+            foreach (GameObject darkPlat in darkMovingArray)
+            {
+                darkPlat.GetComponent<SpriteRenderer>().enabled = true;
+                darkPlat.GetComponent<BoxCollider2D>().enabled = true;
+            }
 
         }
         else
@@ -84,6 +100,16 @@ public class GameManager : MonoBehaviour
             foreach (GameObject dark in darkArray)
             {
                 dark.SetActive(false);
+            }
+            foreach (GameObject lightPlat in lightMovingArray)
+            {
+                lightPlat.GetComponent<SpriteRenderer>().enabled = true;
+                lightPlat.GetComponent<BoxCollider2D>().enabled = true;
+            }
+            foreach (GameObject darkPlat in darkMovingArray)
+            {
+                darkPlat.GetComponent<SpriteRenderer>().enabled = false;
+                darkPlat.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }

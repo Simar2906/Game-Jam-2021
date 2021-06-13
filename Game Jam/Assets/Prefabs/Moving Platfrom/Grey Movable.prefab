@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2635074925879148317}
   - component: {fileID: 6442199915641424537}
   m_Layer: 3
-  m_Name: Black Movable
+  m_Name: Grey Movable
   m_TagString: Grey Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
