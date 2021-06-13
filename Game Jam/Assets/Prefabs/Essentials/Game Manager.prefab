@@ -45,8 +45,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   lives: 3
-  restartDelay: 1
+  numOfHearts: 5
+  restartDelay: 0.1
   darkArray: []
   lightArray: []
+  darkMovingArray: []
+  lightMovingArray: []
   dark: 1
+  keyAcquired: 0
   spriteRenderer: {fileID: 0}
+  player_Animator: {fileID: 0}
+  timeswitching: 0.4
+  coinAmount: 0

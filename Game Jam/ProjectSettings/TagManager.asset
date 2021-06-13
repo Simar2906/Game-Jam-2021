@@ -11,6 +11,7 @@ TagManager:
   - Light Moving Platform
   - Platform Center
   - Game Manager
+  - Hearts
   layers:
   - Default
   - TransparentFX
