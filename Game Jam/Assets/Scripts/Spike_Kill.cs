@@ -14,6 +14,7 @@ public class Spike_Kill : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("You have died");
+            FindObjectOfType<GameManager>().lives = 0;
             gameManager.EndGame();
         }
     }

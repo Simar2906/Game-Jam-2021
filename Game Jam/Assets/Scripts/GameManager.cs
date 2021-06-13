@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     public float timeswitching =0.4f;
     public int coinAmount = 0;
-
+    public int coinCost = 3;
     public PauseMenu pauseMenu;
     public void EndGame()
     {
@@ -50,6 +50,17 @@ public class GameManager : MonoBehaviour
     {
         ThemeChange();
         Switching();
+        if(coinAmount >= coinCost)
+        {
+            Debug.Log("Life increased");
+            coinAmount -= coinCost;
+            //incearsing health
+            lives += 1;
+        }
+        if(lives <= 0)
+        {
+            EndGame();
+        }
     }
     void Switching()
     {
