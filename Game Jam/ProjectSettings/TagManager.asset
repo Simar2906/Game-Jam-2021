@@ -9,6 +9,7 @@ TagManager:
   - Grey Platform
   - Dark Moving Platform
   - Light Moving Platform
+  - Platform Center
   layers:
   - Default
   - TransparentFX
