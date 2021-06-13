@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     {
         if (dark)
         {
-            player_Animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/controller_light");
+            player_Animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/controller_dark");
             foreach (GameObject light in lightArray)
             {
                 light.SetActive(false);
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            player_Animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/controller_dark");
+            player_Animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/controller_light");
             foreach (GameObject light in lightArray)
             {
                 light.SetActive(true);
