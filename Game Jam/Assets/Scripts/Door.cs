@@ -18,6 +18,7 @@ public class Door : MonoBehaviour
             if(gameManager.keyAcquired)
             {
                 Debug.Log("Level has ended");
+                FindObjectOfType<AudioManager>().Play("complete");
                 gameManager.EndGame();
             }
         }

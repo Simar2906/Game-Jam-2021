@@ -69,6 +69,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J)) //left key: 0
         {
             dark = !dark;  
+            FindObjectOfType<AudioManager>().Play("switch");
         }
         if(!pauseMenu.GameIsPaused){
         if (Input.GetKey(KeyCode.J))
