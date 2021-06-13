@@ -9,11 +9,13 @@ public class Player_Movement : MonoBehaviour
     private bool facingRight = true;
     private float moveDirection;
     public float moveSpeed;
+    public float fallMultiplier = 2.5f;
     private Animator animator;
 
     public KeyCode jumpKey = KeyCode.W;
 
     public float jumpForce;
+    public float jumpVelocity = 8f;
     private bool isJumping = false;
 
     public Transform groundCheck = null;
@@ -57,10 +59,19 @@ public class Player_Movement : MonoBehaviour
         rigidBody.velocity = new Vector2(moveDirection * moveSpeed, rigidBody.velocity.y);
         if(isJumping)
         {
-            rigidBody.AddForce(new Vector2(0f, jumpForce));
+            rigidBody.velocity = Vector2.up * jumpVelocity;
+            //rigidBody.AddForce(new Vector2(0f, jumpForce));
         }
         isJumping = false;
+        if(rigidBody.velocity.y <0)
+        {
+            rigidBody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier -1) * Time.deltaTime;
+        }
+        else if(rigidBody.velocity.y > 0)
+        {
+            rigidBody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier -1) * Time.deltaTime;
 
+        }
     }
 
     private void Animate()
