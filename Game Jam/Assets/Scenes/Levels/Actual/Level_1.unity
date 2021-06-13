@@ -323,22 +323,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 671916876, guid: 2249cc58c08154f4b8836c1af747f5cf, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2375
-      objectReference: {fileID: 0}
-    - target: {fileID: 671916876, guid: 2249cc58c08154f4b8836c1af747f5cf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2375
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843554904, guid: 2249cc58c08154f4b8836c1af747f5cf, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2375
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843554904, guid: 2249cc58c08154f4b8836c1af747f5cf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2375
-      objectReference: {fileID: 0}
     - target: {fileID: 7149090513115153001, guid: 2249cc58c08154f4b8836c1af747f5cf, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -347,10 +331,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 293053077}
-    - target: {fileID: 7149090513115153004, guid: 2249cc58c08154f4b8836c1af747f5cf, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 7149090513115153005, guid: 2249cc58c08154f4b8836c1af747f5cf, type: 3}
       propertyPath: m_Pivot.x
       value: 0

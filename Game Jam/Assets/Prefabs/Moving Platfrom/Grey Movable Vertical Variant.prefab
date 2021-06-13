@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50d630551b6ef74d9b7b93c922b6371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  verticalDistance: 5
+  speed: 0.75
+  verticalDistance: 4
 --- !u!1001 &5964737425332388812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31,11 +31,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.16
+      value: 87.85
       objectReference: {fileID: 0}
     - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.91
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 2635074925879148316, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
       propertyPath: m_LocalPosition.z
@@ -71,7 +71,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2635074925879148318, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
       propertyPath: m_Name
-      value: Grey Movable Vertical
+      value: Grey Movable Vertical Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2635074925879148319, guid: da5de40a7e355ed42b39531844cc7ece, type: 3}
       propertyPath: m_Sprite
