@@ -11,7 +11,7 @@ public class Obstacle_Movement_Uniform : MonoBehaviour
     private Vector2 pos2;
     private Rigidbody2D objectRigidBody;
     private bool dirRight = true;
-
+    public float rotationSpeed = 1f;
     private bool turnback;
     private void Awake()
     {
@@ -27,7 +27,9 @@ public class Obstacle_Movement_Uniform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp (pos1, pos2, Mathf.PingPong(Time.time*speed, 1.0f));   
+        transform.position = Vector3.Lerp (pos1, pos2, Mathf.PingPong(Time.time*speed, 1.0f));  
+        transform.Rotate(0, 0, rotationSpeed);
+
     }
 
 
